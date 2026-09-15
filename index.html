@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#ed593b">
+<title>제주 한 걸음 · 원도심 문화 산책</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<div class="floating-shapes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<header class="topbar"><a class="brand" href="./index.html"><span class="logo">▲</span> 제주 한 걸음<span class="brand-sub">JEJU, ONE STEP</span></a><nav aria-label="주 메뉴"><a class="active" href="#explore">장소 둘러보기</a><a href="#planner">나의 산책 리스트 <span id="nav-count">0</span></a></nav><span class="local-label">제주 원도심 ↗</span></header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span></span> 오래된 골목, 새로운 발견</div><h1>제주의 이야기를 따라,<br>오늘도 <em>한 걸음.</em></h1><p>시간이 머문 유적부터 일상을 채우는 예술 공간까지.<br>원도심의 작은 발견들을 나만의 산책으로 연결해보세요.</p><a class="primary" href="#explore">나의 산책 시작하기 <span>↗</span></a><div class="hero-bottom"><span>33° N &nbsp; 126° E</span><span>JEJU OLD TOWN · CULTURE WALK</span></div></div><div class="hero-photo"><img src="https://api.cdn.visitjeju.net/photomng/imgpath/202410/24/f55be51d-9bbc-42bc-9a50-6c50aca0806d.webp" alt="제주목 관아의 전통 건축과 풍경"><div class="photo-label"><span>이야기가 시작되는 곳</span><strong>제주목 관아 <span>↗</span></strong></div><span class="photo-index">01 / JEJU HERITAGE</span></div></section>
+<section class="section-head" id="explore"><div><div class="eyebrow">EXPLORE THE NEIGHBORHOOD</div><h2>골목마다, 다른 이야기<span>.</span></h2></div><p>마음이 가는 곳을 찾아보세요.</p></section>
+<div class="workspace"><section class="explorer" aria-label="장소 탐색"><div class="explore-tools"><div class="filters" aria-label="장소 분류"><button class="selected" data-filter="전체" aria-pressed="true">전체 <span>5</span></button><button data-filter="역사 유적" aria-pressed="false">역사 유적</button><button data-filter="문화 예술" aria-pressed="false">문화 예술</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="장소 또는 주소 검색" aria-label="장소 또는 주소 검색"></label></div>
+<div class="map" aria-label="원도심 장소 개략 위치도"><div class="sea">JEJU SEA</div><div class="road road-one"></div><div class="road road-two"></div><div class="road road-three"></div><div class="road road-four"></div><div class="river"></div><span class="map-road-label">관덕로</span><span class="river-label">산지천</span><span class="district district-one">삼도이동</span><span class="district district-two">일도일동</span><div id="markers"></div><span class="north">N<br>↑</span><div class="map-note">원도심 개략 위치도 · 정확한 위치는 지도에서 확인</div></div>
+<div class="results-heading"><h3>발견한 장소 <span id="result-count">5</span></h3><span>작은 공간에 담긴 큰 이야기</span></div><div id="places" class="places"></div></section>
+<aside class="planner" id="planner"><div class="planner-heading"><div class="eyebrow">MY LITTLE JOURNEY</div><span>↗</span></div><h2>나의 산책 리스트</h2><p class="muted">가고 싶은 곳, 하고 싶은 일을 담아보세요.</p><div class="progress-label"><strong>산책 준비</strong><span id="progress-count"></span></div><div class="progress-track"><div id="progress-fill"></div></div><form id="add-form"><label class="sr-only" for="new-todo">새 방문 할 일</label><input id="new-todo" placeholder="나만의 산책 계획 추가하기" maxlength="200" required autocomplete="off"><button aria-label="할 일 추가">+</button></form><div id="todo-list"></div><div class="highlight-tip"><span>✦</span><p><strong>꼭 기억하고 싶은 순간</strong><br>문구를 드래그해 중요한 부분을 강조해요.<br>☆ 버튼으로 할 일 전체도 강조할 수 있어요.</p></div><div class="planner-foot"><span class="save-dot"></span><span id="save-status">이 브라우저에 자동으로 저장돼요.</span></div></aside></div>
+<section class="walk-note"><span class="note-icon">↗</span><div><div class="eyebrow">TAKE YOUR TIME</div><h3>조금 느리게 걸어도 괜찮아요.</h3><p>골목의 풍경을 담고, 작은 전시에 머물고. 오늘의 제주를 당신의 속도로 만나보세요.</p></div><span class="note-number">한 걸음,<br>한 장면.</span></section>
+<footer><span class="brand">▲ 제주 한 걸음</span><p>제주 원도심을 발견하는 나만의 방법</p><span>장소 정보 · <a href="https://www.visitjeju.net/kr" target="_blank" rel="noopener noreferrer">제주관광공사 Visit Jeju ↗</a></span></footer>
+</main><div id="highlight-toolbar" hidden><button id="apply-highlight">✦ 하이라이트</button><button id="clear-highlight">강조 지우기</button></div><div id="toast" role="status"></div>
+</body></html>
